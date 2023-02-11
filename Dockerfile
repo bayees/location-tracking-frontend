@@ -14,7 +14,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
 
 WORKDIR /app
 COPY requirements.txt .
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY / ./
 
