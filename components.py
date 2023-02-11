@@ -52,7 +52,7 @@ def get_controls(df):
 
     content = html.Div([dbc.Card(
         [
-            dbc.Label("Month"),
+            dbc.Label("Location"),
             dcc.Dropdown(
                 id='category-dropdown',
                 options=[{'label': c, 'value': c} for c in locations],
